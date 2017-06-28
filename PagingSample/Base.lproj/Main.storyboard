@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PagingSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFd-tF-tZv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Text Icon" translatesAutoresizingMaskIntoConstraints="NO" id="rnd-Bf-LGS">
+                                <rect key="frame" x="68" y="194" width="239" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="Cgs-Fm-wYZ"/>
+                                    <constraint firstAttribute="height" constant="66" id="scM-rI-ob2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="8ys-sR-ok2">
+                                <rect key="frame" x="133" y="64" width="109" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8ys-sR-ok2" secondAttribute="height" multiplier="109:100" id="GYd-ti-KSZ"/>
+                                    <constraint firstAttribute="height" constant="100" id="bRl-4b-vxb"/>
+                                    <constraint firstAttribute="width" constant="109" id="hpG-Jc-0si"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fZA-Nb-OyQ">
+                                <rect key="frame" x="68" y="269" width="239" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fZA-Nb-OyQ" secondAttribute="height" multiplier="239:128" id="Sec-aj-VMT"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="30z-WD-ocU">
+                                <rect key="frame" x="160" y="421" width="55" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="8Sn-A0-iJz"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.87058823529411766" green="0.20784313725490194" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guK-yj-HBX">
+                                <rect key="frame" x="68" y="553" width="239" height="30"/>
+                                <color key="backgroundColor" red="0.87058823529411766" green="0.20784313725490194" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="guK-yj-HBX" secondAttribute="height" multiplier="239:30" id="25U-JB-LyJ"/>
+                                </constraints>
+                                <state key="normal" title="Let's Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="30z-WD-ocU" firstAttribute="top" secondItem="fZA-Nb-OyQ" secondAttribute="bottom" constant="24" id="7eL-mb-CYB"/>
+                            <constraint firstItem="OFd-tF-tZv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8nc-ag-pl2"/>
+                            <constraint firstItem="30z-WD-ocU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CPR-Ge-M7n"/>
+                            <constraint firstItem="rnd-Bf-LGS" firstAttribute="top" secondItem="8ys-sR-ok2" secondAttribute="bottom" constant="30" id="E7L-PW-Jye"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="guK-yj-HBX" secondAttribute="bottom" constant="84" id="GHl-b4-pzQ"/>
+                            <constraint firstItem="8ys-sR-ok2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hez-2z-C0n"/>
+                            <constraint firstItem="guK-yj-HBX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="KMz-Uh-Iaw"/>
+                            <constraint firstItem="rnd-Bf-LGS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S6S-4R-FJX"/>
+                            <constraint firstItem="fZA-Nb-OyQ" firstAttribute="top" secondItem="rnd-Bf-LGS" secondAttribute="bottom" constant="9" id="Tkd-kK-BFe"/>
+                            <constraint firstItem="guK-yj-HBX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wfi-Uc-LYm"/>
+                            <constraint firstAttribute="trailing" secondItem="OFd-tF-tZv" secondAttribute="trailing" id="XFY-2y-rTQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="guK-yj-HBX" secondAttribute="trailing" constant="52" id="baP-Ih-rwf"/>
+                            <constraint firstItem="30z-WD-ocU" firstAttribute="top" secondItem="fZA-Nb-OyQ" secondAttribute="bottom" constant="24" id="hMh-ib-BD5"/>
+                            <constraint firstItem="OFd-tF-tZv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lHl-8U-NP4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OFd-tF-tZv" secondAttribute="bottom" id="mHU-WQ-1CQ"/>
+                            <constraint firstItem="rnd-Bf-LGS" firstAttribute="width" secondItem="OFd-tF-tZv" secondAttribute="height" multiplier="239:667" id="tpr-MS-fJI"/>
+                            <constraint firstItem="8ys-sR-ok2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="64" id="xg1-G9-zie"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="30z-WD-ocU" id="w7Q-80-nr7"/>
+                        <outlet property="scrollView" destination="OFd-tF-tZv" id="SeD-MZ-vtP"/>
+                        <outlet property="startButton" destination="guK-yj-HBX" id="CfA-gt-r7e"/>
+                        <outlet property="textView" destination="fZA-Nb-OyQ" id="cN1-pG-cnj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon" width="182" height="204"/>
+        <image name="Text Icon" width="223" height="54"/>
+    </resources>
+</document>
